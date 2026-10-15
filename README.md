@@ -28,3 +28,5 @@ gcc -Wall -Wextra -o parser parser.tab.c
 ```
 ./parser
 ```
+
+Далее получаем синтаксическое дерево

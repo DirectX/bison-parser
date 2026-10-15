@@ -1,2 +1,30 @@
-# bison-parser
-Personal Project on BISON
+# Небольшой туториал по Yacc и Bison: от установки до построения AST
+
+План работы:
+
+- кодогенерация
+- компиляция
+
+## Кодогенерация
+
+В каталоге с parser.y выполни:
+
+```
+bison -Wall -o parser.tab.c parser.y
+```
+
+Bison *прочитает грамматику* и **сгенерирует** исходный код парсера в `parser.tab.c`.
+
+## Компиляция
+
+Затем компилируем:
+
+```
+gcc -Wall -Wextra -o parser parser.tab.c
+```
+
+Запускаем:
+
+```
+./parser
+```
